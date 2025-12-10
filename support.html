@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Rich Skater</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00D4AA;
+            --background: #0a0a0a;
+            --surface: #1a1a1a;
+            --text: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        main {
+            padding: 60px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        .contact-card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            margin-bottom: 16px;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">RICH SKATER</a>
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Support</h1>
+        <p class="subtitle">We're here to help you get the most out of Rich Skater.</p>
+
+        <div class="contact-card">
+            <h3>Contact Us</h3>
+            <p>Have a question, bug report, or feedback? We'd love to hear from you.</p>
+            <a href="mailto:support@richskater.com">support@richskater.com</a>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do I create a MEET profile?</h3>
+            <p>After signing up, go to the MEET tab and tap "Create Profile". Choose your role (Skater, Filmer, Photographer, Coach, or Ramp Builder), add your home skatepark, and you're ready to connect with other skaters.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I find skateparks near me?</h3>
+            <p>Go to the Skateparks tab and allow location access. The map will show all skateparks in your area. Tap any marker to see details and who's skating there.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I book a photo session?</h3>
+            <p>Find a photographer or filmer on the map or in the MEET section. Tap their profile and select "Book Session". Choose your date, time, and add any notes about what you're looking for.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I buy event tickets?</h3>
+            <p>Go to the Events tab and find the event you want to attend. Tap "Get Tickets", select your ticket type and quantity, then complete the checkout process.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I listen to Skate Radio?</h3>
+            <p>The radio player is available throughout the app. Tap the mini player at the bottom of any screen to expand it. You can react and comment on tracks in real-time with other listeners.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete my account?</h3>
+            <p>Go to your Profile, tap the settings icon, and select "Delete Account". This will permanently delete your account and all associated data.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why is my account pending verification?</h3>
+            <p>New accounts are reviewed to ensure a safe community. Verification usually takes less than 24 hours. You'll receive a notification once approved.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I report a user?</h3>
+            <p>Tap on the user's profile, then tap the menu icon (three dots) and select "Report User". Choose the reason and provide any additional details. Our team will review the report.</p>
+        </div>
+
+        <h2>Technical Issues</h2>
+
+        <div class="faq-item">
+            <h3>The app is running slowly</h3>
+            <p>Try closing and reopening the app. If issues persist, check that you have the latest version installed from the App Store or Google Play.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Location isn't working</h3>
+            <p>Make sure you've granted location permissions in your device settings. Go to Settings > Rich Skater > Location and select "While Using the App".</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>I'm not receiving notifications</h3>
+            <p>Check that notifications are enabled in your device settings. Go to Settings > Rich Skater > Notifications and enable the types of notifications you want to receive.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; 2024 Rich Skater. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
