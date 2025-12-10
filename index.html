@@ -11,9 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #00D4AA;
-            --background: #0a0a0a;
-            --surface: #1a1a1a;
+            --primary: #E31E24;
+            --primary-light: #FF3B3F;
+            --primary-dark: #8B0000;
+            --background: #121212;
+            --surface: #1E1E1E;
             --text: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.7);
         }
@@ -43,9 +45,10 @@
             position: fixed;
             width: 100%;
             top: 0;
-            background: rgba(10, 10, 10, 0.9);
+            background: rgba(18, 18, 18, 0.95);
             backdrop-filter: blur(10px);
             z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         nav {
@@ -59,6 +62,7 @@
             font-weight: 800;
             color: var(--primary);
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
@@ -98,6 +102,7 @@
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 24px;
+            letter-spacing: -1px;
         }
 
         .hero-text h1 span {
@@ -131,6 +136,8 @@
         .app-button:hover {
             background: var(--primary);
             border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(227, 30, 36, 0.3);
         }
 
         .app-button svg {
@@ -149,11 +156,11 @@
         }
 
         .app-button:hover .app-button-text span {
-            color: rgba(0, 0, 0, 0.7);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .app-button:hover .app-button-text {
-            color: #000;
+            color: #fff;
         }
 
         .app-button-text strong {
@@ -168,22 +175,24 @@
         .phone-mockup {
             width: 300px;
             height: 600px;
-            background: linear-gradient(145deg, var(--surface), #222);
+            background: linear-gradient(145deg, var(--surface), #252525);
             border-radius: 40px;
             padding: 12px;
-            box-shadow: 0 50px 100px rgba(0, 212, 170, 0.2);
+            box-shadow: 0 50px 100px rgba(227, 30, 36, 0.2);
         }
 
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: linear-gradient(180deg, var(--primary) 0%, #006655 100%);
+            background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
             border-radius: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 48px;
             font-weight: 800;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         /* Features */
@@ -200,6 +209,7 @@
             font-size: 42px;
             font-weight: 700;
             margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
         .section-title p {
@@ -223,13 +233,13 @@
 
         .feature-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 212, 170, 0.1);
+            box-shadow: 0 20px 40px rgba(227, 30, 36, 0.15);
         }
 
         .feature-icon {
             width: 56px;
             height: 56px;
-            background: linear-gradient(135deg, var(--primary), #006655);
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
             border-radius: 16px;
             display: flex;
             align-items: center;
